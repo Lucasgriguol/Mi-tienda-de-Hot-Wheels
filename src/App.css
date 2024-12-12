@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f5;
+  margin: 0;
+  padding: 0;
+}
+
+.barra-navegacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo-navegacion h2 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.enlaces-navegacion {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+}
+
+.enlaces-navegacion li {
+  padding: 8px;
+}
+
+.boton-navegacion {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.boton-navegacion:hover {
+  background-color: #444;
+  transform: scale(1.05);
+}
+
+.widget-carrito {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.icono-carrito {
+  font-size: 40px;
+  color: #fff;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.widget-carrito:hover .icono-carrito {
+  color: #e74c3c;
+  transform: scale(1.2);
+}
+
+.notificacion-carrito {
+  position: absolute;
+  top: -8px;
+  right: -12px;
+  background-color: #e74c3c;
+  color: white;
+  font-size: 16px;
+  padding: 4px 8px;
+  border-radius: 50%;
+  font-weight: bold;
+  border: 2px solid #fff;
+  min-width: 22px;
+  min-height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor-principal {
+  padding-top: 80px;
+}
+
+.contenedor-saludo {
+  padding: 100px 20px 20px 20px;
+  text-align: left;
+}
+
+.contenedor-saludo h2 {
+  font-size: 27px;
+  color: #333;
+  font-weight: 600;
+  margin: 0;
+}
